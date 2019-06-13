@@ -1,0 +1,13 @@
+Download the image. Don’t go by what the image says. Most forensic challenges deal with viewing the hexdump of the image. The hexdump is the hexadecimal representation of the image. Use commands hexdump or xxd for this.
+	
+	hexdump:
+	
+	$ hexdump -C filename.jpg 
+
+This displays the input offset in hexadecimal, followed by sixteen space-separated, two column, hexadecimal bytes, followed by the same sixteen bytes in %_p format enclosed in “|” characters. 
+
+xxd:
+
+$ xxd filename.jpg
+
+You can pipe these commands with grep for better searching.
